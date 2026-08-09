@@ -10,7 +10,7 @@ import{getFirestore,collection,query,where,orderBy,onSnapshot,addDoc,updateDoc,d
 import"./styles.css";
 
 const firebaseConfig={apiKey:"AIzaSyBsHGr1yiVbBzmkNGbs5gbwbgsRVoVF3Ds",authDomain:"grand-market-f0045.firebaseapp.com",projectId:"grand-market-f0045",storageBucket:"grand-market-f0045.firebasestorage.app",messagingSenderId:"661864049127",appId:"1:661864049127:web:e9f2d143bf3ae3e4deb542"};
-const ADMIN_EMAIL="YOUR_ADMIN_EMAIL@gmail.com";
+const ADMIN_EMAIL="k00645572@gmail.com";
 const firebaseApp=initializeApp(firebaseConfig);
 const auth=getAuth(firebaseApp);
 const db=getFirestore(firebaseApp);
