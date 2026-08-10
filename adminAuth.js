@@ -1,0 +1,2 @@
+import jwt from "jsonwebtoken";
+export function requireAdmin(req,res,next){try{const h=req.headers.authorization||"";const t=h.startsWith("Bearer ")?h.slice(7):null;if(!t)throw Error();const p=jwt.verify(t,process.env.JWT_SECRET);if(p.role!=="admin")throw Error();next();}catch{res.status(401).json({message:"Unauthorized"});}}
