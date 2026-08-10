@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Grand Market Admin</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<main>
+  <div class="head">
+    <a href="/" class="back">← Grand Market</a>
+    <span>ADMIN PANEL</span>
+  </div>
+
+  <h1>Manage Listings</h1>
+
+  <section id="login">
+    <p>Enter your admin password</p>
+    <input id="password" type="password" placeholder="Admin password">
+    <button onclick="login()">Unlock Panel</button>
+    <small id="msg"></small>
+  </section>
+
+  <section id="dash" hidden>
+    <div class="toolbar">
+      <h2>All listings</h2>
+      <button onclick="load()">↻ Refresh</button>
+    </div>
+    <div id="list"></div>
+  </section>
+</main>
+
+<script src="admin.js"></script>
+</body>
+</html>
